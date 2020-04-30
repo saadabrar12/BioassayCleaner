@@ -28,13 +28,14 @@ have designed manageable solutions. So, our target and expectation from this pro
 	
 
 * **Process of Annotations**
-	1. Justification - 
+	1. Justification (Not enitrely clear)- 
+		* This filters out Records with Test IDs (TIDs) that contain 'Values' for meta-data which are not directly related to an 'Outcome'.
 		* PubChem does provide a true or false flag, called an active concentration (AC), for depositors to mark summary dose response values (e.g., IC50, EC50, AC50).
 		* Based on the data table.
 		* Categorizing TIDs as *max*,*min*,*mid*, *single-dose* concentration value
 		* For example in the case of an "inactive" outcome, the justification could be the max-dose value for all the tests. In addition to that, in the case of "active" outcome,  the justification could be set to the min-dose value for all the tests. 
 		* What if outcomes "Unspecified?"
-		* 
+		
 	2. Modality of Action
 		* Possibly use stemming(Porter's Word Stemming Algorithm) of words for example, "inhibitor" could be brought down to its root word "inhibit". Could also make use of regular expressions in conjunction to stemming. Can map bioassays to modality of actions as per the as per the occurence of the word in the text.
 		* Have to parse the BioAssay title and description texts (Anything else?)
